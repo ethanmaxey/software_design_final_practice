@@ -1,7 +1,3 @@
-# Software Design Final Exam
-
-Welcome to the Software Design Final Exam repository! In order to participate in the exam, you must follow the steps outlined below. This will ensure a smooth and consistent process for all participants. Good luck!
-
 ## Getting Started
 
 1. **Fork the repository**: To create a personal copy of this repository, click the "Fork" button in the upper right corner of the GitHub page.
