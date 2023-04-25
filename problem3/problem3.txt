@@ -1,0 +1,24 @@
+Write a program, using test first development, for the problem described below. Your work will be evaluated based on code quality, design quality, test quality, test coverage, and of course, the program working to solve the given problem.
+
+This is an individual effort and not pair work. Looking up a book or an internet resource is permitted. However, consulting with another person during the exam or getting help from someone else during the exam is a violation of academic honesty. Helping another student during the exam is also a violation of academic honesty. You are expected to solve this problem based on what you have learned in this course and work in the assignments. In short, don't cheat.
+
+------------------------------------------------------------------------------
+
+Write a program that displays the net asset value for shares held by a user. The program will read a file which has a list of stock ticker symbols and the number of shares for each ticker. For example, a file may contain:
+GOOG 100
+AMZN 250
+INTC 400
+
+The program will then go out to a service and request for the current stock price for one ticker at a time. The program will then find the value for a stock held by the user, based on the current stock price and the number of shares held by the user. For example, if the share price for GOOG is $840, then the  asset value is $840 * 100, that is, $84000.
+
+The program will display the following:
+
+A table with each line displaying a ticker symbol, number of shares held for that ticker by the user, stock price for that ticker, and the asset value for that stock ticker. In the last row, display the net asset value which is a total of the asset values for all the stocks held by the user.
+
+The service at the location http://agile.cs.uh.edu/stock may be used for getting the stock price. For example, 
+
+http://agile.cs.uh.edu/stock?ticker=GOOG will return a price for GOOG
+
+(Please note, much like the stock market price is unpredictable, the price returned by the service is)
+
+You may assume that the ticker symbols mentioned in the file are all valid.

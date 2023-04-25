@@ -1,0 +1,27 @@
+Write a program, using test first development, for the problem described below. Your work will be evaluated based on code quality, design quality, test quality, test coverage, and of course, the program working to solve the given problem.
+
+This is an individual effort and not pair work. Looking up a book or an internet resource is permitted. However, consulting with another person during the exam or getting help from someone else during the exam is a violation of academic honesty. Helping another student during the exam is also a violation of academic honesty. You are expected to solve this problem based on what you have learned in this course and work in the assignments. In short, don't cheat.
+
+------------------------------------------------------------------------------
+
+Write a program that will read a file with airport codes. For example, the file may contain:
+IAH
+IAD
+SFO
+STL
+BOS
+MSP
+
+For each given airport code, the program will fetch the airport name, the city name, state name, temperature, and if there is a delay or not, from http://services.faa.gov/airport/status/{CODE}?format=application/json
+[replace {CODE} with an airport code, for example
+http://services.faa.gov/airport/status/IAH?format=application/json
+to get data for the airport code IAH]
+
+The program will print, in sorted order of city name (if two cities have the same name, then the data is further sorted on state name), the following details: city | state | airport code | airport name | temperature | delayed or --- (--- for no delay).
+
+The program will also print, below the table, one line
+Number of airport delays: #
+
+(where # is the actual number of delays).
+
+If for some reason the details for a airport could not be obtained, then the row for that should be shown with --- for all data that could not be obtained for that airport code (but the airport code itself will be displayed on the row).

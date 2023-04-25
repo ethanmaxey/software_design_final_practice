@@ -1,0 +1,37 @@
+Using test first development, write the program described below.
+
+Write a program that will read a file with the following:
+43.8791, -103.4591
+37.8270, -122.4230
+43.0962, -79.0377
+48.8584, 2.2945
+29.9792, 31.1342
+
+where the number before the comma is the latitude and the number after the 
+comma is the longitude.
+
+The program should print output in the following format, of the location and 
+the next International Space Station Rise time over that location (for 
+example):
+
+Lat/Lon   									ISS Rise Time
+43.8791, -103.4591					15880....
+...
+
+If there was an error for a given lat, lon, it should print for that line:
+
+lat, long 									ERROR: --reason---
+
+where --reason-- is the actual error message the program receives.
+
+The program can find the location of the ISS space station from the following 
+URL: http://api.open-notify.org/iss-pass.json?lat=LAT&lon=LON&n=1
+
+where LAT and LON are replaced by the actual values for latitude and 
+longitude, respectively.
+
+Design the program in a way that if we decide to use a different service in 
+the future, we do not have to change, as much as possible, any existing code, 
+but may have to create new pieces of code to integrate with existing code. We 
+can assume that any new service we will use will be able to accept the lat and 
+lon to return the rise time.
