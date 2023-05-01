@@ -1,0 +1,11 @@
+x canary
+
+x get response returns some response
+
+x parse response takes a string and returns unixtime
+
+x parse response takes an empty string raises exception
+x parse response takes an empty dict raises exception
+
+x get unixtime calls get response and parse
+x get unixtime passes exception from get response to caller
